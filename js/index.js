@@ -100,7 +100,7 @@ class Candidato{
         var info = document.getElementById("Resultado");
         var result ="";
         result += "<div class='card'>";
-        result += "<h1>Datos del alumno</h1>";
+        result += "<h1>Datos del Candidato</h1>";
         result += "<p>Nombre: <span>"+this.nombre+" "+this.apellido+"</span></p>";
         result += "<p>Correo: <span>"+this.correo+"</span></p>";
         result += "<p>Genero: <span>"+this.genero+"</span></p>";
