@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/message.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="caja">
+        <form action="javascript:void(0)" name="frmRegistro" id="frmRegistro">
+            <label for="">Nombre</label>
+            <input type="text" name="txtNombre" id="txtNombre" required>
+            <label for="">Apellido</label>
+            <input type="text" name="txtApellido" id="txtApellido" required>
+            <label for="">Pais de nacimiento</label>
+            <select name="selectPais" id="selectPais">
+                <option value="El Salvador">El Salvador</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Guatemala">Guatemala</option>
+            </select>
+            <label for="">Correo</label>
+            <input pattern="[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.([a-zA-Z]{2,4})" type="email" name="txtEmail" id="txtEmail" required>
+            <div class="accounttype">
+                <p>Género:</p>
+                <input type="radio" value="Masculino" id="radioOne" name="chkgender" checked="checked" />
+                <label for="radioOne" class="radio" chec>Masculino</label>
+                <input type="radio" value="Femenino" id="radioTwo" name="chkgender" />
+                <label for="radioTwo" class="radio">Femenino</label>
+            </div>
+            <label for="">Fecha de Nacimiento</label>
+            <input type="date" name="dateFecha" id="dateFecha" required >
+            <label for="">Pais de Recidencia</label>
+            <select name="selectResidencia" id="selectResidencia">
+                <option value="El Salvador">El Salvador</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Guatemala">Guatemala</option>
+            </select>
+            <label for="">Departamento</label>
+            <select name="selectDepartamento" id="selectDepartamento">
+                <option value="Ahuachapán">Ahuachapán</option>
+                <option value="Santa Ana">Santa Ana</option>
+                <option value="Sonsonate">Sonsonate</option>
+                <option value="Chalatenango">Chalatenango</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="San Salvador">San Salvador</option>
+                <option value="Cuscatlán">Cuscatlán</option>
+                <option value="La Paz">La Paz</option>
+                <option value="Cabañas">Cabañas</option>
+                <option value="San Vicente">San Vicente</option>
+                <option value="Usulután">Usulután</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="Morazán">Morazán</option>
+                <option value="La Unión">La Unión</option>
+            </select>
+            <label for="">Telefono de casa</label>
+            <input pattern="[0-9]{8}" maxlength="8" type="text" name="txtNumeroCasa" id="txtNumeroCasa" placeholder="78023080" required>
+            <label for="">Telefono celular</label>
+            <input pattern="[0-9]{8}" maxlength="8" type="text" name="txtNumeroCelular" placeholder="22920746" id="txtNumeroCelular" required>
+            <label for="">Domicilio</label>
+            <input type="text" name="txtDomicilio" id="txtDomicilio" required>
+            <input type="submit" name="btnRegistrar" id="btnRegistrar" value="Registrar">
+        </form>
+    </div>
+    <div id="Error">
+
+    </div>
+    <div id="Resultado">
+
+    </div>
+    
+</body>
+</html>
